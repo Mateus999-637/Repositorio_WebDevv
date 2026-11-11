@@ -1,0 +1,59 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background: #f3f6fa;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    --blue: #0b3b72;
+    --accent: #1676c5;
+    --muted: #687586;
+}
+
+* { box-sizing: border-box; }
+
+body { min-width: 320px; min-height: 100vh; margin: 0; }
+
+.page-shell {
+    min-height: 100vh;
+    padding: 32px 18px;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(ellipse at 50% 0%, #e3effb 0, #f3f6fa 55%);
+}
+
+.login-card {
+    width: min(100%, 420px);
+    padding: 38px;
+    border: 1px solid #e3e8ef;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 14px 40px rgb(26 53 83 / 9%);
+}
+
+.brand {
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.brand span { color: var(--accent); }
+.eyebrow { margin: 32px 0 8px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: 1.2px; }
+h1 { margin: 0; color: #172536; font-size: 30px; letter-spacing: -1px; }
+.intro { margin: 8px 0 26px; color: var(--muted); font-size: 14px; }
+.form-group { margin-bottom: 18px; }
+label { display: block; margin-bottom: 7px; color: #344256; font-size: 13px; font-weight: 700; }
+input { width: 100%; height: 46px; padding: 0 13px; border: 1px solid #cfd8e3; border-radius: 6px; outline: none; color: #1f2937; background: #fff; font: inherit; font-size: 14px; transition: border-color .15s, box-shadow .15s; }
+input::placeholder { color: #9aa5b2; }
+input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgb(22 118 197 / 15%); }
+button { width: 100%; min-height: 46px; margin-top: 4px; border: 0; border-radius: 6px; color: #fff; background: var(--blue); font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; transition: background .15s, transform .15s; }
+button:hover { background: #104d8c; }
+button:active { transform: translateY(1px); }
+button:focus-visible, a:focus-visible { outline: 3px solid #7dbcf0; outline-offset: 3px; }
+.security-note { margin: 20px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; text-align: center; }
+
+@media (max-width: 480px) {
+    .page-shell { padding: 20px 14px; }
+    .login-card { padding: 30px 24px; }
+}
