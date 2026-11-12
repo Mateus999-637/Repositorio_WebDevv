@@ -1,4 +1,4 @@
-//exemplo de login com validação de usuário e senha
+//esse aq e um exemplo de login (somente exemplo, nao e seguro)
 function fazerLogin() {
   const username = document.getElementById("usuario").value;
   const password = document.getElementById("senha").value;

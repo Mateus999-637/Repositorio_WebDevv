@@ -1,0 +1,104 @@
+:root {
+  --cor-principal: #3b5bdb;
+  --cor-fundo: #f1f3f9;
+  --cor-texto: #1f2430;
+  --ok: #2b8a3e;
+  --alerta: #e67700;
+  --erro: #c92a2a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+.topo {
+  background: var(--cor-principal);
+  color: #fff;
+  text-align: center;
+  padding: 24px 16px;
+}
+.topo h1 { margin: 0 0 4px; }
+.topo p { margin: 0; opacity: 0.85; }
+
+.container { max-width: 820px; margin: 24px auto; padding: 0 16px; }
+
+.cartao {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+.dica { color: #5c6370; }
+
+.linha-aluno {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr auto;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+input {
+  padding: 8px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+input:focus { outline: 2px solid var(--cor-principal); border-color: transparent; }
+.media-ao-vivo { font-size: 0.9rem; color: #495057; }
+
+.btn {
+  background: var(--cor-principal);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover { filter: brightness(1.1); }
+.btn.secundario { background: #e9ecef; color: var(--cor-texto); }
+.btn-remover {
+  background: transparent;
+  border: none;
+  color: var(--erro);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.acoes { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+.msg-erro { color: var(--erro); min-height: 1.2em; }
+
+.tabela-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e9ecef; }
+th { background: #f8f9fa; }
+
+.selo { padding: 3px 10px; border-radius: 12px; color: #fff; font-size: 0.85rem; }
+.selo.ok { background: var(--ok); }
+.selo.alerta { background: var(--alerta); }
+.selo.erro { background: var(--erro); }
+
+.resumo { list-style: none; padding: 0; margin: 0 0 20px; }
+.resumo li { padding: 4px 0; }
+
+.aviso {
+  background: #fff4e6;
+  border-left: 4px solid var(--alerta);
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.rodape { text-align: center; color: #5c6370; padding: 24px 0; }
+
+@media (max-width: 600px) {
+  .linha-aluno { grid-template-columns: 1fr 1fr; }
+  .linha-aluno input[type="text"] { grid-column: 1 / -1; }
+}
