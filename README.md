@@ -34,14 +34,14 @@ Este repositório reúne estudos e exemplos práticos dos conceitos fundamentais
 - O projeto de boletim usa `htmlspecialchars()` para escapar valores apresentados na página.
 
 
-## 🧭 Navegação
+## - Navegação
 
 - **HTML:** [guia](html/explicacao_html.md), [página de notícia](html/01%20-%20criacao-pag-noticia/index.html), [formulário](html/02%20-%20form/index.html) e [tabela](html/03%20-%20table/index.html).
 - **CSS:** [guia](css/explicacao_css.md), [exemplos de estilos](css/) e [frameworks](css/frameworks_css/frameworks.md).
 - **JavaScript:** [guia](javascript/explicacao_js.md), [exercícios](javascript/) e [frameworks](javascript/frameworksjs/frameworks_js.md).
 - **PHP:** [guia](php/explicacao_php.md), [exemplo inicial](php/hello_world/ola.php) e [projeto de boletim](php/projeto-boletim/projeto-boletim/README.md).
 
-## 🚀 Como executar
+## - Como executar
 
 As páginas `.html` podem ser abertas diretamente no navegador. Para executar PHP, é necessário ter PHP instalado e iniciar um servidor local:
 
