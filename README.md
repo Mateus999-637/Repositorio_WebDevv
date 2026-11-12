@@ -1,5 +1,4 @@
-# Projeto de Desenvolvimento Web Full Stack
-
+# Projeto de Desenvolvimento Web 
 Este repositório reúne estudos e exemplos práticos dos conceitos fundamentais de desenvolvimento web. Os materiais estão organizados por tecnologia e incluem páginas HTML, exercícios de CSS e JavaScript, além de um projeto em PHP que processa dados no servidor.
 
 ## 📚 Tópicos e Tecnologias Abordadas
@@ -34,7 +33,6 @@ Este repositório reúne estudos e exemplos práticos dos conceitos fundamentais
 - Validação de dados no servidor e geração de páginas HTML.
 - O projeto de boletim usa `htmlspecialchars()` para escapar valores apresentados na página.
 
-O boletim é um exercício local e **não usa banco de dados**. Conceitos como PDO, CRUD e requisições AJAX não estão implementados nos exemplos atuais; podem ser explorados em exercícios futuros.
 
 ## 🧭 Navegação
 
