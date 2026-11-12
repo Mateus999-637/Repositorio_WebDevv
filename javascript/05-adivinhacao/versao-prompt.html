@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adivinhação (prompt)</title>
+  </head>
+  <body>
+    <h1>Jogo de Adivinhação (do-while + prompt)</h1>
+    <p>Recarregue a página para jogar de novo.</p>
+    <script>
+      const MIN = 1;
+      const MAX = 12;
+      let numeroSecreto = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
+      let tentativas = 0;
+      let dicas = "";
+      let numero = 0;
+
+      do {
+        let input = prompt(
+          "Digite um número entre " + MIN + " e " + MAX + dicas,
+        );
+        if (input === null) break; // cancelou
+        numero = parseInt(input);
+        tentativas++;
+        if (numero > numeroSecreto) {
+          dicas = `\nO número é menor que ${numero}`;
+        } else if (numero < numeroSecreto) {
+          dicas = `\nO número é maior que ${numero}`;
+        } else {
+          alert(
+            `Parabéns, você acertou o número secreto em ${tentativas} tentativas!`,
+          );
+        }
+      } while (numero != numeroSecreto);
+    </script>
+  </body>
+</html>
