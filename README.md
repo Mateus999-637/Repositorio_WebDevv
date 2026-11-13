@@ -41,12 +41,4 @@ Este repositório reúne estudos e exemplos práticos dos conceitos fundamentais
 - **JavaScript:** [guia](javascript/explicacao_js.md), [exercícios](javascript/) e [frameworks](javascript/frameworksjs/frameworks_js.md).
 - **PHP:** [guia](php/explicacao_php.md), [exemplo inicial](php/hello_world/ola.php) e [projeto de boletim](php/projeto-boletim/projeto-boletim/README.md).
 
-## - Como executar
 
-As páginas `.html` podem ser abertas diretamente no navegador. Para executar PHP, é necessário ter PHP instalado e iniciar um servidor local:
-
-1. Abra um terminal na pasta `php/projeto-boletim/projeto-boletim`.
-2. Execute `php -S localhost:8000`.
-3. Acesse `http://localhost:8000`.
-
-Para executar os testes do boletim, use `php tests/run.php` na mesma pasta. Mais detalhes estão no [README do projeto](php/projeto-boletim/projeto-boletim/README.md).
