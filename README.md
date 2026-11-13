@@ -1,7 +1,7 @@
 # Projeto de Desenvolvimento Web 
 Este repositório reúne estudos e exemplos práticos dos conceitos fundamentais de desenvolvimento web. Os materiais estão organizados por tecnologia e incluem páginas HTML, exercícios de CSS e JavaScript, além de um projeto em PHP que processa dados no servidor.
 
-## 📚 Tópicos e Tecnologias Abordadas
+## ∞ Tópicos e Tecnologias Abordadas
 
 ### 1. HTML5
 
