@@ -1,8 +1,7 @@
 # Projeto de Desenvolvimento Web Full Stack
-
 Este repositório reúne estudos e exemplos práticos dos conceitos fundamentais de desenvolvimento web. Os materiais estão organizados por tecnologia e incluem páginas HTML, exercícios de CSS e JavaScript, além de um projeto em PHP que processa dados no servidor.
 
-## 📚 Tópicos e Tecnologias Abordadas
+## ∞ Tópicos e Tecnologias Abordadas
 
 ### 1. HTML5
 
@@ -42,6 +41,7 @@ O projeto PHP implementa um CRUD local de jogos com MySQL, uma API JSON e uma co
 - **CSS:** [guia](css/explicacao_css.md), [exemplos de estilos](css/) e [frameworks](css/frameworks_css/frameworks.md).
 - **JavaScript:** [guia](javascript/explicacao_js.md), [exercícios](javascript/) e [frameworks](javascript/frameworksjs/frameworks_js.md).
 - **PHP:** [guia](php/explicacao_php.md), [exemplo inicial](php/hello_world/ola.php) e [CRUD de jogos](php/crud-jogos/README.md).
+
 
 ## 🚀 Como executar
 
