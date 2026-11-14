@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consultar jogos</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Consulta de jogos</h1>
+    <p>API PHP + fetch()</p>
+  </header>
+  <main class="container">
+    <section class="cartao">
+      <h2>Jogos cadastrados</h2>
+      <button id="buscar" class="btn" type="button">Consultar o banco</button>
+      <p id="mensagem" role="status" aria-live="polite"></p>
+      <ul id="lista-jogos" class="lista-jogos"></ul>
+      <a class="btn secundario" href="index.php">Voltar para o CRUD</a>
+    </section>
+  </main>
+  <footer class="rodape">
+    <p>CRUD de jogos</p>
+  </footer>
+  <script>
+    const botaoBuscar = document.querySelector("#buscar");
+    const listaJogos = document.querySelector("#lista-jogos");
+    const mensagem = document.querySelector("#mensagem");
+
+    botaoBuscar.addEventListener("click", async () => {
+      botaoBuscar.disabled = true;
+      mensagem.textContent = "Consultando...";
+      listaJogos.replaceChildren();
+
+      try {
+        const resposta = await fetch("api_jogos.php");
+        if (!resposta.ok) {
+          throw new Error("Falha ao consultar os jogos.");
+        }
+
+        const jogos = await resposta.json();
+        jogos.forEach((jogo) => {
+          const item = document.createElement("li");
+          item.textContent = `${jogo.nome} (${jogo.plataforma})`;
+          listaJogos.append(item);
+        });
+        mensagem.textContent = jogos.length === 0 ? "Nenhum jogo cadastrado." : "";
+      } catch (erro) {
+        mensagem.textContent = erro.message;
+      } finally {
+        botaoBuscar.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

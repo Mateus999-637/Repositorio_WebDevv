@@ -32,23 +32,23 @@ Este repositório reúne estudos e exemplos práticos dos conceitos fundamentais
 - Leitura de dados de formulários com `$_POST` e `$_GET`.
 - Condicionais, laços, arrays, funções próprias e inclusão de arquivos.
 - Validação de dados no servidor e geração de páginas HTML.
-- O projeto de boletim usa `htmlspecialchars()` para escapar valores apresentados na página.
+- O CRUD de jogos usa PDO para persistir dados no MySQL e `htmlspecialchars()` para escapar valores apresentados na página.
 
-O boletim é um exercício local e **não usa banco de dados**. Conceitos como PDO, CRUD e requisições AJAX não estão implementados nos exemplos atuais; podem ser explorados em exercícios futuros.
+O projeto PHP implementa um CRUD local de jogos com MySQL, uma API JSON e uma consulta via `fetch()`.
 
 ## 🧭 Navegação
 
 - **HTML:** [guia](html/explicacao_html.md), [página de notícia](html/01%20-%20criacao-pag-noticia/index.html), [formulário](html/02%20-%20form/index.html) e [tabela](html/03%20-%20table/index.html).
 - **CSS:** [guia](css/explicacao_css.md), [exemplos de estilos](css/) e [frameworks](css/frameworks_css/frameworks.md).
 - **JavaScript:** [guia](javascript/explicacao_js.md), [exercícios](javascript/) e [frameworks](javascript/frameworksjs/frameworks_js.md).
-- **PHP:** [guia](php/explicacao_php.md), [exemplo inicial](php/hello_world/ola.php) e [projeto de boletim](php/projeto-boletim/projeto-boletim/README.md).
+- **PHP:** [guia](php/explicacao_php.md), [exemplo inicial](php/hello_world/ola.php) e [CRUD de jogos](php/crud-jogos/README.md).
 
 ## 🚀 Como executar
 
 As páginas `.html` podem ser abertas diretamente no navegador. Para executar PHP, é necessário ter PHP instalado e iniciar um servidor local:
 
-1. Abra um terminal na pasta `php/projeto-boletim/projeto-boletim`.
+1. Abra um terminal na pasta `php/crud-jogos`.
 2. Execute `php -S localhost:8000`.
 3. Acesse `http://localhost:8000`.
 
-Para executar os testes do boletim, use `php tests/run.php` na mesma pasta. Mais detalhes estão no [README do projeto](php/projeto-boletim/projeto-boletim/README.md).
+Mais detalhes para configurar o MySQL, executar os testes e usar o projeto estão no [README do CRUD](php/crud-jogos/README.md).
